@@ -19,7 +19,17 @@ app.post('/checkout', async (req, res) => {
                     product_data: {
                         name: 'Batteries'
                     },
-                    unit_amount: 200 * 100
+                    unit_amount: 200*100
+                },
+                quantity: 7
+            },
+            {
+                price_data: {
+                    currency: 'inr',
+                    product_data: {
+                        name: 'Ram'
+                    },
+                    unit_amount: 100*100
                 },
                 quantity: 1
             }

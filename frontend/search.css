@@ -1,0 +1,131 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+#nav>img{
+    width: 190px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+  
+  #nav {
+    display: flex;
+    width: 100vw;
+    padding: 32px 320px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter",sans-serif; 
+    position:fixed;
+    background-color: white;
+    z-index: 1000;
+  }
+  
+  #nav a:hover {
+      color: #F15A24; /* Choose your hover color */
+  }
+    
+  
+  
+  #nav>#middle-nav{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    gap: 40px;
+  }
+  
+  #nav>#middle-nav>span{
+    color: var(--Main-Paragraph, #4E4B66);
+    text-align: center;
+  /* Body/Regular */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #nav>.test>#contact-us>button{
+    display: flex;
+    height: 40px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px solid var(--Hero-Primary, #F15A24);
+    color:#F15A24;
+    background-color: white;
+    font-family: "Inter";
+  }
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.search-bar {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.search-bar input, .search-bar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.search-bar .filter-btn {
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.card-details p {
+    margin: 5px 0;
+}
+

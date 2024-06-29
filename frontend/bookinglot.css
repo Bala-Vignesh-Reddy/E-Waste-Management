@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+*::selection {
+    background-color: #F15A24;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F15A24;
+    border-radius: 50px;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family:"Inter",sans-serif;
+}
+
+#nav {
+    display: flex;
+    width: 100vw;
+    padding: 32px 320px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+
+#nav > img {
+    width: 190px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+#nav > #middle-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav > #middle-nav > span {
+    color: #4E4B66;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+#nav > #middle-nav > span:hover {
+    color: #F15A24;
+}
+
+#nav > #contact-us > button {
+    display: flex;
+    height: 40px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px solid #F15A24;
+    color: #F15A24;
+    background-color: white;
+    font-family: "Inter";
+    cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+   
+}
+
+.back-button a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-button img{
+    margin-top : 40px;
+    object-fit: cover;
+    width : 25px;
+    height : 25px;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar, .time-slots {
+    width: 45%;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.time-slots h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.time-slots ul {
+    list-style-type: none;
+}
+
+.time-slots li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.confirm-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.confirm-button button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.date {
+    padding: 10px 20px;
+    font-size: 20px;
+}
