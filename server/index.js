@@ -19,9 +19,19 @@ app.post('/checkout', async (req, res) => {
                     product_data: {
                         name: 'Batteries'
                     },
-                    unit_amount: 200 * 100
+                    unit_amount: 200*100
                 },
-                quantity: 1
+                quantity: 8
+            },
+            {
+                price_data: {
+                    currency: 'inr',
+                    product_data: {
+                        name: 'Ram'
+                    },
+                    unit_amount: 100*100
+                },
+                quantity: 2
             }
         ],
         mode: 'payment',
@@ -68,4 +78,4 @@ app.get('/cancel', (req, res) => {
 })
 
 
-app.listen(3000, () => console.log('Server is running on port 3000'))
+app.listen(5000, () => console.log('Server is running on port 5000'))

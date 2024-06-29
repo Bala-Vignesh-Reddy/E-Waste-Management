@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Team</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#team {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line on smaller screens */
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Individual Team Member Styles */
+.team-member {
+    background-color: #fff;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image fills the circle without distortion */
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member .title {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design Tweaks (Optional) */
+@media (max-width: 768px) {
+    .team-member {
+        width: 90%; /* Take up more width on smaller screens */
+        margin: 10px auto; /* Center on smaller screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section id="team">
+        <h2>Meet Our Team</h2>
+
+        <div class="team-member">
+            <img src="member1.jpg" alt="Member 1 Photo">
+            <h3>Tavish Gupta</h3>
+            <p class="title">Developer</p>
+            <p>Tavish is a visionary leader with a passion for innovation.</p>
+        </div>
+
+        <div class="team-member">
+            <img src="member2.jpg" alt="Member 2 Photo">
+            <h3>Ansh Bhavsar</h3>
+            <p class="title">Lead Designer</p>
+            <p>Ansh's creative designs bring our products to life.</p>
+        </div>
+
+        <div class="team-member">
+            <img src="member3.jpg" alt="Member 3 Photo">
+            <h3>BalaVignesh</h3>
+            <p class="title">Backend Engineer</p>
+            <p>Bala's expertise ensures our technology is top-notch.</p>
+        </div>
+    </section>
+</body>
+</html>
